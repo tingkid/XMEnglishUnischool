@@ -44,6 +44,7 @@
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
+  "vendored_frameworks": "XMEnglishUnischool.framework",
   "source_files": "XMEnglishUnischool.framework/Headers/*.h",
   "public_header_files": "XMEnglishUnischool.framework/Headers/XMEnglishUnischool.h",
   "resources": "XMEnglishUnischool.framework/*.bundle",

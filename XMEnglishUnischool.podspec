@@ -34,7 +34,7 @@ TODO: Add long description of the pod here.
       'DEFINES_MODULE' => 'YES'
   }
   
-
+  s.vendored_frameworks = 'XMEnglishUnischool.framework'
   s.source_files = 'XMEnglishUnischool.framework/Headers/*.h'
   s.public_header_files = 'XMEnglishUnischool.framework/Headers/XMEnglishUnischool.h'
   s.resource = 'XMEnglishUnischool.framework/*.bundle'
