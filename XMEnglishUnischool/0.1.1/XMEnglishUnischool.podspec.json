@@ -48,7 +48,7 @@
   "public_header_files": "XMEnglishUnischool.framework/Headers/XMEnglishUnischool.h",
   "resources": "XMEnglishUnischool.framework/*.bundle",
   "source": {
-    "http": "https://github.com/tingkid/XMEnglishUnischool/tree/main/zip/XMEnglishUnischool/0.1.1/XMEnglishUnischool.zip"
+    "http": "https://github.com/tingkid/XMEnglishUnischool/blob/main/zip/XMEnglishUnischool/0.1.1/XMEnglishUnischool.zip"
   },
   "dependencies": {
     "TIWLogger_iOS": [
