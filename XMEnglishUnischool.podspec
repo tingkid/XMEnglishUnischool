@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XMEnglishUnischool'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A short description of XMEnglishUnischool.'
 
   s.description      = <<-DESC
@@ -41,8 +41,6 @@ TODO: Add long description of the pod here.
   s.source = { :http => "https://github.com/tingkid/XMEnglishUnischool/raw/main/zip/XMEnglishUnischool/0.1.1/XMEnglishUnischool.zip" }
 
   
-  s.dependency 'QCloudCOSXML', '~> 6.0'
-  s.dependency 'TAISDK_iOS', '~> 1.0'
   s.dependency 'lottie-ios', '~> 3.0'
   
   s.dependency 'FMDB', '~> 2.0'
