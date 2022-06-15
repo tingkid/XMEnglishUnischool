@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XMEnglishUnischool'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of XMEnglishUnischool.'
 
   s.description      = <<-DESC
@@ -38,12 +38,11 @@ TODO: Add long description of the pod here.
   s.source_files = 'XMEnglishUnischool.framework/Headers/*.h'
   s.public_header_files = 'XMEnglishUnischool.framework/Headers/XMEnglishUnischool.h'
   s.resource = 'XMEnglishUnischool.framework/*.bundle'
-  s.source = { :http => "https://github.com/tingkid/XMEnglishUnischool/raw/main/zip/XMEnglishUnischool/#{s.version}/XMEnglishUnischool.zip" }
+  s.source = { :http => "https://github.com/tingkid/XMEnglishUnischool/raw/main/zip/XMEnglishUnischool/0.1.1/XMEnglishUnischool.zip" }
 
   
-  s.dependency 'TIWLogger_iOS', '1.0.1.41'
-  s.dependency 'QCloudCOSXML', '6.0.3'
-  s.dependency 'TAISDK_iOS', '1.2.3.93'
+  s.dependency 'QCloudCOSXML', '~> 6.0'
+  s.dependency 'TAISDK_iOS', '~> 1.0'
   s.dependency 'lottie-ios', '~> 3.0'
   
   s.dependency 'FMDB', '~> 2.0'
