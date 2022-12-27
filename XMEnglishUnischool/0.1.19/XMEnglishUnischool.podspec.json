@@ -1,0 +1,96 @@
+{
+  "name": "XMEnglishUnischool",
+  "version": "0.1.19",
+  "summary": "A short description of XMEnglishUnischool.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/tingkid/XMEnglishUnischool.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zll": "zll"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "static_framework": true,
+  "swift_versions": "5.0",
+  "requires_arc": true,
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "SystemConfiguration",
+    "Security",
+    "CoreGraphics",
+    "MobileCoreServices",
+    "WebKit",
+    "CoreTelephony",
+    "StoreKit",
+    "AudioToolbox",
+    "JavaScriptCore",
+    "AVFoundation",
+    "MediaPlayer",
+    "Accelerate",
+    "CoreFoundation",
+    "CoreImage",
+    "CoreText",
+    "ImageIO"
+  ],
+  "libraries": [
+    "sqlite3",
+    "z"
+  ],
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "vendored_frameworks": "XMEnglishUnischool.framework",
+  "source_files": "XMEnglishUnischool.framework/Headers/*.h",
+  "public_header_files": "XMEnglishUnischool.framework/Headers/XMEnglishUnischool.h",
+  "resources": "XMEnglishUnischool.framework/*.bundle",
+  "source": {
+    "http": "https://github.com/tingkid/XMEnglishUnischool/raw/main/zip/XMEnglishUnischool/0.1.19/XMEnglishUnischool.zip"
+  },
+  "dependencies": {
+    "FDFullscreenPopGesture": [
+
+    ],
+    "lottie-ios": [
+      "~> 3.0"
+    ],
+    "FMDB": [
+      "~> 2.0"
+    ],
+    "YYKit": [
+      "~> 1.0"
+    ],
+    "SAMKeychain": [
+      "~> 1.0"
+    ],
+    "AFNetworking": [
+      "~> 4.0"
+    ],
+    "MJExtension": [
+      "~> 3.0"
+    ],
+    "MJRefresh": [
+      "~> 3.0"
+    ],
+    "SnapKit": [
+      "~> 5.0"
+    ],
+    "SDWebImage": [
+      "~> 5.0"
+    ],
+    "Masonry": [
+      "~> 1.0"
+    ],
+    "IQKeyboardManager": [
+      "~> 6.0"
+    ],
+    "SSZipArchive": [
+      "~> 2.0"
+    ]
+  },
+  "swift_version": "5.0"
+}
