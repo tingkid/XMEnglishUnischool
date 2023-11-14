@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XMEnglishUnischool'
-  s.version          = '0.1.20'
+  s.version          = '0.1.21'
   s.summary          = 'A short description of XMEnglishUnischool.'
 
   s.description      = <<-DESC
@@ -35,10 +35,10 @@ TODO: Add long description of the pod here.
   #     'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES'
   # }
   
-  s.vendored_frameworks = 'zip/XMEnglishUnischool/0.1.19/XMEnglishUnischool.framework'
-  # s.source_files = 'XMEnglishUnischool.framework/Headers/*.h'
-  # s.public_header_files = 'XMEnglishUnischool.framework/Headers/XMEnglishUnischool.h'
-  s.resource = 'zip/XMEnglishUnischool/0.1.19/XMEnglishUnischool.framework/*.bundle'
+  s.vendored_frameworks = 'XMEnglishUnischool.framework'
+  s.source_files = 'XMEnglishUnischool.framework/Headers/*.h'
+  s.public_header_files = 'XMEnglishUnischool.framework/Headers/XMEnglishUnischool.h'
+  s.resource = 'XMEnglishUnischool.framework/*.bundle'
   s.source = { :http => "https://github.com/tingkid/XMEnglishUnischool/raw/main/zip/XMEnglishUnischool/#{s.version}/XMEnglishUnischool.zip" }
 
   s.dependency 'FDFullscreenPopGesture'
