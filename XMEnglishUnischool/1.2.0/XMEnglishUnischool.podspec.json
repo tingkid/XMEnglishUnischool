@@ -44,6 +44,10 @@
   "source": {
     "http": "https://github.com/tingkid/XMEnglishUnischool/raw/main/zip/XMEnglishUnischool/1.2.0/framework.zip"
   },
+  "default_subspecs": [
+    "xike",
+    "obs"
+  ],
   "dependencies": {
     "FDFullscreenPopGesture": [
 
@@ -88,12 +92,12 @@
   "subspecs": [
     {
       "name": "xike",
-      "resources": "framework/XMEnglishUnischool.framework/*.bundle",
-      "vendored_frameworks": "framework/XMEnglishUnischool.framework"
+      "resources": "XMEnglishUnischool.framework/*.bundle",
+      "vendored_frameworks": "XMEnglishUnischool.framework"
     },
     {
       "name": "obs",
-      "vendored_frameworks": "framework/OBS.framework"
+      "vendored_frameworks": "OBS.framework"
     }
   ],
   "swift_version": "5.0"

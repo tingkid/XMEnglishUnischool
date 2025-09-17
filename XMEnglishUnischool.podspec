@@ -38,13 +38,16 @@ TODO: Add long description of the pod here.
 
   
   s.subspec 'xike' do |ss|
-    ss.resource = 'framework/XMEnglishUnischool.framework/*.bundle'
-    ss.vendored_frameworks = 'framework/XMEnglishUnischool.framework'
+    ss.resource = 'XMEnglishUnischool.framework/*.bundle'
+    ss.vendored_frameworks = 'XMEnglishUnischool.framework'
   end
 
   s.subspec 'obs' do |ss|
-    ss.vendored_frameworks = 'framework/OBS.framework'
+    ss.vendored_frameworks = 'OBS.framework'
   end
+
+  # 默认 subspec，包含所有模块
+  s.default_subspecs = 'xike', 'obs'
 
   s.dependency 'FDFullscreenPopGesture'
   s.dependency 'lottie-ios', '~> 3.4.0'
@@ -58,7 +61,6 @@ TODO: Add long description of the pod here.
   s.dependency 'SnapKit', '~> 5.0'
   s.dependency 'SDWebImage', '~> 5.0'
   s.dependency 'Masonry', '~> 1.0'
-  s.dependency 'MJExtension', '~> 3.0'
   s.dependency 'IQKeyboardManager', '~> 6.0'
   s.dependency 'SSZipArchive', '~> 2.0'
 end
