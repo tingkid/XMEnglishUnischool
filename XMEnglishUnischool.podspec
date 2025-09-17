@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XMEnglishUnischool'
-  s.version          = '1.1.0'
+  s.version          = '1.2.0'
   s.summary          = 'A short description of XMEnglishUnischool.'
 
   s.description      = <<-DESC
@@ -21,7 +21,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'zll' => 'zll' }
   
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
 
   s.static_framework = true
   s.swift_version = '5.0'
@@ -29,17 +29,22 @@ TODO: Add long description of the pod here.
 
   s.frameworks = 'UIKit', 'Foundation', 'SystemConfiguration', 'Security', 'CoreGraphics', 'MobileCoreServices', 'WebKit', 'CoreTelephony', 'StoreKit', 'AudioToolbox', 'JavaScriptCore', 'AVFoundation', 'MediaPlayer', 'Accelerate', 'CoreFoundation', 'CoreImage', 'CoreText', 'ImageIO'
   s.libraries = 'sqlite3', 'z'
-  
+  s.source = { :http => "https://github.com/tingkid/XMEnglishUnischool/raw/main/zip/XMEnglishUnischool/#{s.version}/framework.zip" }
   # s.pod_target_xcconfig = {
   #     'DEFINES_MODULE' => 'YES',
   #     'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES'
   # }
   
-  s.vendored_frameworks = 'XMEnglishUnischool.framework'
-  s.source_files = 'XMEnglishUnischool.framework/Headers/*.h'
-  s.public_header_files = 'XMEnglishUnischool.framework/Headers/XMEnglishUnischool.h'
-  s.resource = 'XMEnglishUnischool.framework/*.bundle'
-  s.source = { :http => "https://github.com/tingkid/XMEnglishUnischool/raw/main/zip/XMEnglishUnischool/#{s.version}/XMEnglishUnischool.zip" }
+
+  
+  s.subspec 'xike' do |ss|
+    ss.resource = 'framework/XMEnglishUnischool.framework/*.bundle'
+    ss.vendored_frameworks = 'framework/XMEnglishUnischool.framework'
+  end
+
+  s.subspec 'obs' do |ss|
+    ss.vendored_frameworks = 'framework/OBS.framework'
+  end
 
   s.dependency 'FDFullscreenPopGesture'
   s.dependency 'lottie-ios', '~> 3.4.0'
