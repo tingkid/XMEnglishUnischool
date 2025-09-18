@@ -1,0 +1,104 @@
+{
+  "name": "XMEnglishUnischool",
+  "version": "1.2.1",
+  "summary": "A short description of XMEnglishUnischool.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/tingkid/XMEnglishUnischool.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zll": "zll"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "static_framework": true,
+  "swift_versions": "5.0",
+  "requires_arc": true,
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "SystemConfiguration",
+    "Security",
+    "CoreGraphics",
+    "MobileCoreServices",
+    "WebKit",
+    "CoreTelephony",
+    "StoreKit",
+    "AudioToolbox",
+    "JavaScriptCore",
+    "AVFoundation",
+    "MediaPlayer",
+    "Accelerate",
+    "CoreFoundation",
+    "CoreImage",
+    "CoreText",
+    "ImageIO"
+  ],
+  "libraries": [
+    "sqlite3",
+    "z"
+  ],
+  "source": {
+    "http": "https://github.com/tingkid/XMEnglishUnischool/raw/main/zip/XMEnglishUnischool/1.2.1/framework.zip"
+  },
+  "default_subspecs": [
+    "xike",
+    "obs"
+  ],
+  "dependencies": {
+    "FDFullscreenPopGesture": [
+
+    ],
+    "lottie-ios": [
+      "~> 3.4.0"
+    ],
+    "FMDB": [
+      "~> 2.0"
+    ],
+    "YYKit": [
+      "~> 1.0"
+    ],
+    "SAMKeychain": [
+      "~> 1.0"
+    ],
+    "AFNetworking": [
+      "~> 4.0"
+    ],
+    "MJExtension": [
+      "~> 3.0"
+    ],
+    "MJRefresh": [
+      "~> 3.0"
+    ],
+    "SnapKit": [
+      "~> 5.0"
+    ],
+    "SDWebImage": [
+      "~> 5.0"
+    ],
+    "Masonry": [
+      "~> 1.0"
+    ],
+    "IQKeyboardManager": [
+      "~> 6.0"
+    ],
+    "SSZipArchive": [
+      "~> 2.0"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "xike",
+      "resources": "XMEnglishUnischool.framework/*.bundle",
+      "vendored_frameworks": "XMEnglishUnischool.framework"
+    },
+    {
+      "name": "obs",
+      "vendored_frameworks": "OBS.framework"
+    }
+  ],
+  "swift_version": "5.0"
+}
