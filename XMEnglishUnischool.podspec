@@ -46,6 +46,8 @@ TODO: Add long description of the pod here.
   end
 
   s.subspec 'obs' do |ss|
+    ss.source_files = 'OBS.framework/Headers/*.h'
+    ss.public_header_files = 'OBS.framework/Headers/*.h'
     ss.vendored_frameworks = 'OBS.framework'
   end
 
