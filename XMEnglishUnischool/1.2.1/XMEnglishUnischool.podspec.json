@@ -92,11 +92,15 @@
   "subspecs": [
     {
       "name": "xike",
+      "source_files": "XMEnglishUnischool.framework/Headers/*.h",
+      "public_header_files": "XMEnglishUnischool.framework/Headers/XMEnglishUnischool.h",
       "resources": "XMEnglishUnischool.framework/*.bundle",
       "vendored_frameworks": "XMEnglishUnischool.framework"
     },
     {
       "name": "obs",
+      "source_files": "OBS.framework/Headers/*.h",
+      "public_header_files": "OBS.framework/Headers/*.h",
       "vendored_frameworks": "OBS.framework"
     }
   ],
