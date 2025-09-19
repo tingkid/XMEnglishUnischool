@@ -38,6 +38,9 @@ TODO: Add long description of the pod here.
 
   
   s.subspec 'xike' do |ss|
+    ss.source_files = 'XMEnglishUnischool.framework/Headers/*.h'
+    ss.public_header_files = 'XMEnglishUnischool.framework/Headers/XMEnglishUnischool.h'
+
     ss.resource = 'XMEnglishUnischool.framework/*.bundle'
     ss.vendored_frameworks = 'XMEnglishUnischool.framework'
   end
